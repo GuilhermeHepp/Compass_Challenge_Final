@@ -1,0 +1,14 @@
+{
+    "new_user": {
+        "username": "testuser",
+        "email": "testuser@example.com",
+        "password": "TestPass123",
+        "confirm_password": "TestPass123"
+},
+    "updated_user": {
+        "username": "updateduser",
+        "email": "updateduser@example.com",
+        "password": "XXXXXXXXXXXXXX",
+        "confirm_password": "XXXXXXXXXXXXXX"
+    }
+}
