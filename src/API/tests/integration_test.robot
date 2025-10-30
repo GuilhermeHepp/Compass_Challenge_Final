@@ -82,12 +82,12 @@ Fluxo Completo Cinema - Criar Filme, Cinema, Sessão e Reserva
     # Criar Reserva
     &{seat1} =    Create Dictionary
     ...    row=A
-    ...    number=${5}    # <--- CORRIGIDO! Isso força a ser um NÚMERO
+    ...    number=${5}    
     ...    type=full
 
     &{seat2} =    Create Dictionary
     ...    row=A
-    ...    number=${6}    # <--- CORRIGIDO! Isso força a ser um NÚMERO
+    ...    number=${6}    
     ...    type=full
 
     @{seats} =    Create List    ${seat1}    ${seat2}
