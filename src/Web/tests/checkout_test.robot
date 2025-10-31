@@ -26,8 +26,11 @@ Fazer Reservas
     Entrar na sessão disponivel    12:00     Inception
     
     Verificar se a pagina de assentos está aberta
-    Seleciona assentos na sessão    A    5
-    Seleciona assentos na sessão    A    6
+    Resetar Assentos Selecionados
+    Sleep    3s
+    Seleciona assentos na sessão    A    1
+    Seleciona assentos na sessão    A    2
+    Sleep    3s
     Confirmar reserva de assentos
 
     Selecionar metodo de pagamento    Cartão de Crédito

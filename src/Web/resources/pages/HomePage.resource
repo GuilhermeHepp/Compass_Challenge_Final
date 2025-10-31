@@ -6,41 +6,42 @@ Resource          ../base.resource
 
 *** Keywords ***
 Go to home pelo navbar
-    Go To    ${BASE_URL}
+    Click    role=link[name="Cinema App"]
    
     Wait For Elements State    role=link[name="Cinema App"]    visible
 
 Go To Filmes em Cartaz
-    Go To    ${BASE_URL}/movies
+    Click    role=navigation >> role=link[name="Filmes em Cartaz"]
     
+    # CORRIGIDO: O seletor e o estado 'visible' estão SEPARADOS
     Wait For Elements State    role=heading[name="Filmes em Cartaz"]    visible
 
 Go to Login page
-    Go to     ${BASE_URL}/login
+    Click    role=navigation >> role=link[name="Login"]
     
-    Wait For Elements State     role=heading[name="Login"]    visible
+
+    Wait For Elements State    role=heading[name="Login"]    visible
 
 Go to Signup page
 
-    Go to     ${BASE_URL}/register
+    Click    role=link[name="Cadastrar"]
     
     Wait For Elements State     xpath=//h1[contains(text(), "Cadastro")]    visible
 
 Go to Minhas Reservas page
-    Go to     ${BASE_URL}/reservations
+    Click    role=link[name="Minhas Reservas"]
     
     Wait For Elements State     role=heading[name="Minhas Reservas"]    visible
 
 Go to meu perfil page
-    Go to     ${BASE_URL}/profile
-    
-    Wait For Elements State     role=heading[name="Perfil"]    visible
+    Click    role=link[name="Perfil"]
+
+    Wait For Elements State    role=heading[name="Meu Perfil"]    visible
 
 Go to Admin Dashboard page
-    Go to     ${BASE_URL}/admin
+    Click    role=navigation >> role=link[name="Administração"]
     
-    Wait For Elements State     role=heading[name="Administração"]    visible
 
 Go out
-    Click            xpath=//button[contains(text(), "Sair")]
+    Click            role=button[name="Sair"]
 

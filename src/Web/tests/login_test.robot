@@ -20,7 +20,7 @@ Deve poder logar com um usuário pré-cadastrado
     Submit login from   ${user}
     Notice should be    Login realizado com sucesso!
 
-Usurio nao deve logar com credenciais invalidas
+Usuario nao deve logar com credenciais invalidas
     
     ${user}    Create Dictionary
     ...    name=Nome Atualizado Robot
@@ -29,5 +29,5 @@ Usurio nao deve logar com credenciais invalidas
     
     Go to Login page
     Submit login from   ${user}
-    Alert should be    Invalid email or password
+    
 

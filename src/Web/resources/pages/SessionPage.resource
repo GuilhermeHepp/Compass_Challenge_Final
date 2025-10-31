@@ -28,3 +28,7 @@ Seleciona assentos na sessão
 Confirmar reserva de assentos
 
     Click    role=button[name="Continuar para Pagamento"]
+
+Resetar Assentos Selecionados
+
+    Click    role=button[name="Resetar Assentos"]

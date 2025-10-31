@@ -11,6 +11,9 @@ Resource            pages/components/alert.resource
 Resource            pages/Movies.resource
 Resource            pages/SessionPage.resource
 Resource            pages/CheckoutPage.resource
+Resource            pages/Reservations.resource
+Resource            pages/ProfilePage.resource
+Resource            pages/AdminPage.resource
 
 *** Keywords ***
 Start Session

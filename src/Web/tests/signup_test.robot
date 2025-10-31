@@ -16,7 +16,7 @@ Deve poder cadastrar um novo usuario
     
     ${user}          Create Dictionary
     ...              name=Guilherme    
-    ...              email=guilherme@qa.com
+    ...              email=gggggg@qa.com
     ...              password=teste1234
     
     Go to signup page
@@ -31,9 +31,9 @@ Usuario ja existente nao deve ser cadastrado
     
     ${user}          Create Dictionary
     ...              name=Guilherme    
-    ...              email=guilherme@qa.com
+    ...              email=gggggg@qa.com
     ...              password=teste1234
     
     Go to signup page
     Submit signup from    ${user}
-    Notice should be      Usuário já existe!  
+    Alert should be    User already exists
