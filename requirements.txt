@@ -1,0 +1,15 @@
+# Robot Framework Core
+robotframework==6.1.1
+
+# API Testing
+robotframework-requests==0.9.4
+requests==2.31.0
+
+# Web Testing  
+robotframework-browser==17.5.2
+
+# JSON Handling
+robotframework-jsonlibrary==0.5
+
+# Utilities
+robotframework-collections==0.0.1

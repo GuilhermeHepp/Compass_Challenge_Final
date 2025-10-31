@@ -30,12 +30,12 @@ Fluxo Completo Cinema - Criar Filme, Cinema, Sessão e Reserva
 
     # Criar Filme
     &{movie_data} =    Create Dictionary
-    ...    title=Filme Integração Robottooo
+    ...    title=Filme Integração Robot TESTE
     ...    synopsis=Filme criado para teste de integração
     ...    director=Diretor Robot
     ...    genres=["Ação", "Ficção"]
     ...    duration=130
-    ...    classification=14
+    ...    classification=18
     ...    releaseDate=2024-12-15
 
     ${movie_response}=    Post Create Movie    ${admin_token}    ${movie_data}
@@ -46,7 +46,7 @@ Fluxo Completo Cinema - Criar Filme, Cinema, Sessão e Reserva
 
     # Criar Cinema
     &{theater_data} =    Create Dictionary
-    ...    name=Cinema Integração Robotoo
+    ...    name=Cinema Integração Robot TESTE
     ...    capacity=80
     ...    type=standard
 
@@ -61,8 +61,8 @@ Fluxo Completo Cinema - Criar Filme, Cinema, Sessão e Reserva
     ...    movie=${movie_id}
     ...    theater=${theater_id}
     ...    datetime=2024-12-15T20:00:00.000Z
-    ...    fullPrice=30.00
-    ...    halfPrice=15.00
+    ...    fullPrice=40.00
+    ...    halfPrice=20.00
 
     ${session_response}=    Post Create Session    ${admin_token}    ${session_data}
     ${session_created}=     Get From Dictionary    ${session_response}    data
